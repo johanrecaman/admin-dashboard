@@ -1,7 +1,7 @@
-<h1 align="center">Odin Calculator</h1>
+<h1 align="center">Admin Dashboard</h1>
 
-<p align="center">This is a web project made with HTML, CSS and JavaScript for studying purposes</p>
-<p align="center">This app is on V3.5</p>
+<p align="center">This is a web project made with HTML and Vanilla CSS for studying purposes</p>
+<p align="center">This app is on V1.0</p>
 
 <img src="./lib/images/readme/readmeprint.png"></img>
 
