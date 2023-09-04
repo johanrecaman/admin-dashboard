@@ -5,6 +5,10 @@ body{
     margin: 0;
     padding: 0;
 }
+p{
+    margin: 0;
+    padding: 0;
+}
 .container{
     display: flex;
 }
@@ -12,7 +16,7 @@ body{
     display: grid;
     grid-template-rows: 0.3fr repeat(5, 0fr) 0.3fr repeat(3, 0fr);
     row-gap: 0.5rem;
-    width: 20rem;
+    width: 20vw;
     height: 100vh;
     background-color: #E63462;
 }
@@ -32,7 +36,6 @@ body{
     height: 2.5rem;
 }
 .left_btn_image{
-    width: 1.5rem;
     height: 1.5rem;
     padding-bottom: 0.3rem;
 }
@@ -40,13 +43,14 @@ body{
     display: flex;
     align-items: center;
     height: 5vh;
-    width: 100%;
+    width: 20vw;
     gap: 1rem;
     padding-left: 1.5rem;
     background-color: #E63462;
     color: #f5f5f5;
     border: none;
-    font-size: 1rem;
+    overflow: hidden;
+    font-size: 100%;
     font-weight: 700;
     transition: 0.3s;
 }
@@ -57,7 +61,8 @@ body{
 .right_container{
     height: 100vh;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 .right_header{
     width: 80vw;
@@ -84,8 +89,12 @@ body{
     box-sizing: border-box;
     align-items: center;
     justify-content: left;
-    padding-left: 3rem;
+    padding-left: 2vh;
+    padding-bottom: 2vh;
     gap: 1rem;
+}
+#hithere{
+    font-size: 12px;
 }
 #input{
     width: 100%;
@@ -96,12 +105,13 @@ body{
 }
 #profile{
     display: grid;
-    grid-template-columns: 0fr 0.4fr 1fr;
-    padding-left: 5rem;
+    grid-template-columns: 0fr 0fr 1fr;
+    padding-left: 20vw;
 }
 #right_header_btn{
     display: flex;
-    gap: 1.5rem;
+    gap: 1.5vw;
+    padding-left: 10vw;
 }
 .right_btn{
     width: 5rem;
@@ -155,6 +165,17 @@ main{
 .card_content{
     background-color: #f5f5f5;
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 1rem;
+}
+#card_title{
+    font-weight: bolder;
+}
+#card_text{
+    font-size: 0.8rem;
 }
 .right_column{
     display: grid;
